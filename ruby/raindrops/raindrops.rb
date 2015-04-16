@@ -18,8 +18,6 @@ class Raindrops
       sound << SOUNDS_FOR_FACTORS[factor.to_s] if factor.prime_factor_of?(number)
     end
     
-    return number.to_s if sound.empty?
-    
-    sound
+    sound.empty? ? number.to_s : sound
   end
 end
