@@ -1,8 +1,6 @@
 class Squares
   def initialize(upper_bound)
-    @upper_bound    = upper_bound
-    @square_of_sums = square_of_sums
-    @sum_of_squares = sum_of_squares
+    @upper_bound = upper_bound
   end
   
   def square_of_sums
@@ -14,6 +12,6 @@ class Squares
   end
   
   def difference
-    @square_of_sums - @sum_of_squares
+    square_of_sums - sum_of_squares
   end
 end
